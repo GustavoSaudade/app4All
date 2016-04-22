@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <!-- Meta Tags e imports default do Cordova -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <!-- Imports do projeto -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="app/assets/libs/angular/angular.min.js"></script>
+        <script type="text/javascript" src="app/assets/libs/angular-route/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="app/app.module.js"></script>
+        <script type="text/javascript" src="app/sections/telaInicial/telaInicialController.js"></script>
+
+        <title>App 4All</title>
+    </head>
+
+    <body ng-app="app4AllModule">
+      <div ui-view></div>
+    </body>
+</html>
