@@ -11,6 +11,12 @@ app.config(function($stateProvider, $urlRouterProvider){
   $stateProvider
     .state('telaInicial', {
       url: "/telaInicial",
-      templateUrl: "app/sections/telaInicial/telaInicial.html"
+      templateUrl: "app/sections/telaInicial/telaInicial.html",
+      controller: 'telaInicialController'
+    })
+    .state('telaPrincipal', {
+      url: "/telaPrincipal/:urlId",
+      templateUrl: "app/sections/telaPrincipal/telaPrincipal.html",
+      controller: 'telaPrincipalController'
     });
 });

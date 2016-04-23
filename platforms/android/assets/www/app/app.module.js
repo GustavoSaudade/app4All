@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('app4AllModule', ['ui.router', require('angular-resource')]);
+var app = angular.module('app4AllModule', ['ui.router']);
 
 app.config(function($stateProvider, $urlRouterProvider){
 
@@ -11,6 +11,12 @@ app.config(function($stateProvider, $urlRouterProvider){
   $stateProvider
     .state('telaInicial', {
       url: "/telaInicial",
-      templateUrl: "app/sections/telaInicial/telaInicial.html"
+      templateUrl: "app/sections/telaInicial/telaInicial.html",
+      controller: 'telaInicialController'
+    })
+    .state('telaPrincipal', {
+      url: "/telaPrincipal/:urlId",
+      templateUrl: "app/sections/telaPrincipal/telaPrincipal.html",
+      controller: 'telaPrincipalController'
     });
 });
