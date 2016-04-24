@@ -9,6 +9,12 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.teste.app4All"
+        },
+        "plugin.google.maps": {
+            "PACKAGE_NAME": "com.teste.app4All"
+        },
+        "com.google.playservices": {
+            "PACKAGE_NAME": "com.teste.app4All"
         }
     },
     "dependent_plugins": {}
