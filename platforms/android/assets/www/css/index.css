@@ -61,7 +61,6 @@
   height: 100%;
   left: 0%;
   top: 0%;
-
 }
 /** =============================TELAINICIAL=END=========================== **/
 
@@ -293,15 +292,48 @@
   border: solid 3px #000;
 }
 .comentario {
-  position: absolute;
   width: 99%;
   height: 80px;
+  color: rgb(224, 139, 0);
   border: solid 3px #000;
 }
 #fotoUsuario {
   position: absolute;
   width: 20%;
-  height: 100%;
+  border-radius: 100%;
+  border: solid 3px #000;
+}
+#nomeUsuario {
+  position: absolute;
+  width: 75%;
+  height: 15%;
+  left: 25%;
+  font-size: 10px;
+  border: solid 3px #000;
+}
+#tituloComentario {
+  position: relative;
+  height: 25%;
+  width: 40%;
+  margin-left: 25%;
+  top: 40%;
+  font-size: 15px;
+  border: solid 3px #000;
+}
+#estrelas {
+  position: absolute;
+  height: 25%;
+  width: 40%;
+  left: 60%;
+  top: 25%;
+  border: solid 3px #000;
+}
+#conteudoComentario {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  top: 50%;
+  left: 20%;
   border: solid 3px #000;
 }
 
