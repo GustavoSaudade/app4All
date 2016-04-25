@@ -1,5 +1,4 @@
-<div class="superContent">
-
+<div id="superContentTelaPrincipal" class="superContentTelaPrincipal">
   <div class="cabecalho">
     <div class="botaoVoltarContent">
       <a id="linkVoltar" ui-sref="telaInicial"><img id="botaoVoltar" src="img/botaovoltar.png" alt="" /></a>
@@ -7,7 +6,7 @@
     <div class="localizacao">
       <img id="pinoDoMapa" src="img/pin.png" alt="" />
       <div class="localizacaoTexto">
-        {{responseJson.cidade}} - {{responseJson.bairro}} - {{telefone}}
+        {{responseJson.cidade}} - {{responseJson.bairro}}
       </div>
     </div>
     <div class="botaoSearchContent">
@@ -38,7 +37,7 @@
         <img class="imagensBotoesSecao" src="img/servicos.png" alt="" />
         <button type="button" name="button" class="botaoDaSecao"></button>
       </div>
-      <div id="botaoEndereco">
+      <div id="botaoEndereco" ng-click="clickEndereco()">
         <img class="imagensBotoesSecao" src="img/endereco.png" alt="" />
         <button type="button" name="button" class="botaoDaSecao"></button>
       </div>
@@ -57,4 +56,15 @@
       </p>
     </div>
   </div>
+  <div style="width:100%;height:20%;top:75%;" id="map_canvas"></div>
+
+</div>
+
+<div class="popUpServicos" ng-show="showPopUp">
+  <button id="enderecoButton" type="button" name="button" ng-click="clickClosePopUp()">X</button>
+  <div id="enderecoTexto">
+    O endereço é:<br>
+    {{endereco}}
+  </div>
+
 </div>
