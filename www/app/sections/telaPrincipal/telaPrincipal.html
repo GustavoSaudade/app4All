@@ -43,7 +43,7 @@
       </div>
       <div id="botaoComentarios">
         <img class="imagensBotoesSecao" src="img/comentarios.png" alt="" />
-        <button type="button" name="button" class="botaoDaSecao"></button>
+        <button type="button" name="button" class="botaoDaSecao" ng-click="clickComentarios()"></button>
       </div>
       <div id="botaoFavoritos">
         <img class="imagensBotoesSecao" src="img/favoritos.png" alt="" />
@@ -57,7 +57,7 @@
     </div>
   </div>
   <div style="width:100%;height:20%;top:75%;" id="map_canvas"></div>
-  <div class="comentariosContent">
+  <div id="comentariosContent" class="comentariosContent">
     <div class="comentario" ng-repeat="comentario in comentarios">
       <img id="fotoUsuario" src="{{comentario.urlFoto}}" alt="" />
       <span id="nomeUsuario">{{comentario.nome}}</span>
