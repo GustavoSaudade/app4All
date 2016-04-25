@@ -24,7 +24,7 @@ app.controller('telaPrincipalController', ['$scope', '$stateParams', '$http', fu
     var myLatLng = {lat: $scope.latitude, lng: $scope.longitude};
 
     var map = new google.maps.Map(document.getElementById('map_canvas'), {
-      zoom: 4,
+      zoom: 15,
       center: myLatLng
     });
 
