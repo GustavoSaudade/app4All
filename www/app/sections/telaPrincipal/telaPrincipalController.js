@@ -12,32 +12,18 @@ app.controller('telaPrincipalController', ['$scope', '$stateParams', '$http', fu
     $scope.logoUrl = response.data.urlLogo;
     $scope.textoDaSecao = response.data.texto;
     $scope.telefone = response.data.telefone;
+    $scope.latitude = response.data.latitude;
+    $scope.longitude = response.data.longitude;
+    initialize();
     console.log(response);
   }, function errorCallback(response) {
     console.log(response);
   });
 
   function initialize() {
-    var latlng = new google.maps.LatLng(-34.397, 150.644);
-    var myOptions = {
-      zoom: 8,
-      center: latlng,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
+    var myLatLng = {lat: $scope.latitude, lng: $scope.longitude};
 
-    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-  }
-
-  $scope.$on('$viewContentLoaded', initialize());
-
-  $scope.clickSearch = function() {
-    alert("SearchAction!");
-  }
-
-  $scope.initMap = function() {
-    var myLatLng = {lat: -25.363, lng: 131.044};
-
-    var map = new google.maps.Map(document.getElementById('map'), {
+    var map = new google.maps.Map(document.getElementById('map_canvas'), {
       zoom: 4,
       center: myLatLng
     });
@@ -45,8 +31,15 @@ app.controller('telaPrincipalController', ['$scope', '$stateParams', '$http', fu
     var marker = new google.maps.Marker({
       position: myLatLng,
       map: map,
-      title: 'Hello World!'
+      title: 'Hello World!',
+      mapTypeId: google.maps.MapTypeId.ROADMAP
     });
+  }
+
+  //$scope.$on('$viewContentLoaded', initialize());
+
+  $scope.clickSearch = function() {
+    alert("SearchAction!");
   }
 
 
