@@ -15,6 +15,7 @@ app.controller('telaPrincipalController', ['$scope', '$stateParams', '$http', fu
     $scope.latitude = response.data.latitude;
     $scope.longitude = response.data.longitude;
     $scope.endereco = response.data.endereco;
+    $scope.comentarios = response.data.comentarios;
     initialize();
     console.log(response);
   }, function errorCallback(response) {

@@ -14,11 +14,27 @@ app.controller('telaPrincipalController', ['$scope', '$stateParams', '$http', fu
     $scope.telefone = response.data.telefone;
     $scope.latitude = response.data.latitude;
     $scope.longitude = response.data.longitude;
+    $scope.endereco = response.data.endereco;
     initialize();
     console.log(response);
   }, function errorCallback(response) {
     console.log(response);
   });
+
+  $scope.showPopUp = false;
+  //$scope.$on('$viewContentLoaded', initialize());
+
+  $scope.clickSearch = function() {
+    alert("SearchAction!");
+  }
+
+  $scope.clickEndereco =function() {
+    $scope.showPopUp = true;
+  }
+
+  $scope.clickClosePopUp = function() {
+    $scope.showPopUp = false;
+  }
 
   function initialize() {
     var myLatLng = {lat: $scope.latitude, lng: $scope.longitude};
@@ -35,12 +51,5 @@ app.controller('telaPrincipalController', ['$scope', '$stateParams', '$http', fu
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
   }
-
-  //$scope.$on('$viewContentLoaded', initialize());
-
-  $scope.clickSearch = function() {
-    alert("SearchAction!");
-  }
-
 
 }]);
