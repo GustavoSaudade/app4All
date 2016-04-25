@@ -62,6 +62,13 @@
 /** =============================TELAINICIAL=END=========================== **/
 
 /** =============================TELAPRINCIPAL============================== **/
+.superContentTelaPrincipal {
+  position: absolute;
+  height: 99%;
+  width: 96%;
+  background-color: rgba(242, 242, 242, 1);
+}
+
 .cabecalho {
   position: absolute;
   width: 100%;

@@ -15,37 +15,14 @@
         <script type="text/javascript" src="app/sections/telaInicial/telaInicialController.js"></script>
         <script type="text/javascript" src="app/sections/telaPrincipal/telaPrincipalController.js"></script>
 
-        <script type="text/javascript">
-          var map;
-
-          document.addEventListener("deviceready", function() {
-            var div = document.getElementById("map_canvas");
-
-            // Initialize the map view
-            plugin.google.maps.Map.isAvailable(function(isAvailable, message) {
-    if (isAvailable) {
-      var map = plugin.google.maps.Map.getMap(div);
-      map.addEventListener(plugin.google.maps.event.MAP_READY, onMapInit);
-    } else {
-      alert(message);
-    }
-  });
-});
-
-function onMapInit(map) {
-  alert("The google map is available on this device.");
-}
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
 
 
-
-    </script>
         <title>App 4All</title>
     </head>
 
-    <body ng-app="app4AllModule">
-      <div style="width:100%;height:400px" id="map_canvas"></div>
-      <button id="button">Full Screen</button>
+    <body ng-app="app4AllModule" onload="initialize()">
       <div ui-view></div>
     </body>
 </html>
