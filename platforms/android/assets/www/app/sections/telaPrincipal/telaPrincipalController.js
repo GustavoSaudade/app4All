@@ -37,6 +37,11 @@ app.controller('telaPrincipalController', ['$scope', '$stateParams', '$http', fu
     $scope.showPopUp = false;
   }
 
+  $scope.clickComentarios = function() {
+    var element_to_scroll_to = document.getElementById('comentariosContent');
+    element_to_scroll_to.scrollIntoView();
+  }
+
   function initialize() {
     var myLatLng = {lat: $scope.latitude, lng: $scope.longitude};
 
