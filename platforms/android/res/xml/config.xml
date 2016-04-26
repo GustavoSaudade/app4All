@@ -15,6 +15,7 @@
         <param name="android-package" value="plugin.google.maps.MyGeocoder" />
     </feature>
     <allow-intent href="market:*" />
+    <preference name="Orientation" value="portrait" />
     <name>HelloCordova</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.

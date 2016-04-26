@@ -4,7 +4,8 @@
   <!-- ========================== Cabeçalho ================================ -->
   <div class="cabecalho">
     <div class="botaoVoltarContent">
-      <a id="linkVoltar" ui-sref="telaInicial"><img id="botaoVoltar" src="img/botaovoltar.png" alt="" /></a>
+      <a id="linkVoltar" ui-sref="telaInicial"></a>
+      <img id="botaoVoltar" src="img/botaoVoltar.png" alt="" />
     </div>
     <div class="localizacao">
       <img id="pinoDoMapa" src="img/pin.png" alt="" />
@@ -71,7 +72,14 @@
       </p>
     </div>
   </div>
+  <!-- ========================== Seção e Botões =FIM======================= -->
+
+
+  <!-- ========================== Mapa ===================================== -->
   <div style="width:100%;height:20%;top:75%;" id="map_canvas"></div>
+  <!-- ========================== Mapa =FIM================================= -->
+
+  <!-- ========================== Comentários ============================== -->
   <div id="comentariosContent" class="comentariosContent">
     <div class="comentario" ng-repeat="comentario in comentarios">
       <img id="fotoUsuario" src="{{comentario.urlFoto}}" alt="" />
@@ -81,7 +89,7 @@
       <p id="conteudoComentario">{{comentario.comentario}}</p>
     </div>
   </div>
-  <!-- ========================== Seção e Botões =FIM======================= -->
+  <!-- ========================== Comentários =FIM========================== -->
 </div>
 
 <!-- ============================ PopUp Endereço =========================== -->

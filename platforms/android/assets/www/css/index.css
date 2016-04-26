@@ -96,6 +96,7 @@
   width: 100%;
   top: 0%;
   left: 0px;
+  z-index: 5;
 }
 #botaoVoltar {
   position: absolute;
@@ -299,6 +300,7 @@
   width: 100%;
   top: 95%;
   height: auto;
+  background-color: #FFF;
 }
 .comentario {
   position: relative;
