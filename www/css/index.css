@@ -28,13 +28,13 @@
 .buttonsHome {
   position: absolute;
   width: 100%;
-  height: 45%;
-  top: 50%;
+  height: 50%;
+  top: 42%;
   color: #000;
 }
 .buttonsHome button {
   width: 100%;
-  height: 20%;
+  height: 17%;
   margin-top: 5%;
   -webkit-animation-name: bounceInRight;
  animation-name: bounceInRight;
@@ -48,12 +48,17 @@
 #buttonHome2 {
   animation-duration: 1.5s;
   -webkit-animation-duration: 1.5s;
-  background-color: rgb(44, 44, 44);
+  background-color: rgb(103, 147, 16);
 }
 #buttonHome3 {
   animation-duration: 2s;
   -webkit-animation-duration: 2s;
   background-color: rgb(81, 81, 81);
+}
+#buttonHome4 {
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+  background-color: rgb(44, 44, 44);
 }
 .linksNavigation {
   position: absolute;
@@ -72,6 +77,7 @@
   background-color: rgba(242, 242, 242, 1);
 }
 
+/** Cabeçalho da telaPrincipal **/
 .cabecalho {
   position: absolute;
   width: 100%;
@@ -79,7 +85,6 @@
   color: #FFF;
   background-color: rgb(224, 139, 0);
 }
-
 .botaoVoltarContent {
   position: absolute;
   height: 100%;
@@ -98,7 +103,6 @@
   width: 100%;
   top: 42%;
 }
-
 .localizacao {
   position: absolute;
   width: 80%;
@@ -122,7 +126,6 @@
   align-items: flex-end;
   font-size: 18px;
 }
-
 .botaoSearchContent {
   position: absolute;
   height: 100%;
@@ -144,6 +147,7 @@
   top: 40%;
 }
 
+/** Imagem Principal da telaPrincipal **/
 .imagemDaPaginaContent {
   position: absolute;
   width: 100%;
@@ -155,6 +159,7 @@
   height: 100%;
 }
 
+/** Título da telaPrincipal **/
 .tituloContent {
   position: absolute;
   width: 100%;
@@ -163,6 +168,7 @@
   color: rgb(224, 139, 0);
 }
 
+/** Logotipo da telaPrincipal **/
 .logoContent {
   position: absolute;
   width: 20%;
@@ -178,19 +184,18 @@
   border-radius: 100%;
 }
 
+/** Seção descrição e botões da telaPrincipal **/
 .secao {
   position: absolute;
   width: 100%;
   height: 25%;
   top: 50%;
   background-color: #FFF;
-
 }
 .botoesSecaoContent {
   position: absolute;
   width: 100%;
   height: 30%;
-
 }
 .botaoDaSecao {
   position: absolute;
@@ -208,35 +213,30 @@
   position: absolute;
   width: 20%;
   height: 100%;
-
 }
 #botaoServicos {
   position: absolute;
   width: 20%;
   height: 100%;
   left: 20%;
-
 }
 #botaoEndereco {
   position: absolute;
   width: 20%;
   height: 100%;
   left: 40%;
-
 }
 #botaoComentarios {
   position: absolute;
   width: 20%;
   height: 100%;
   left: 60%;
-
 }
 #botaoFavoritos {
   position: absolute;
   width: 20%;
   height: 100%;
   left: 80%;
-
 }
 .textoSecaoContent {
   position: absolute;
@@ -255,15 +255,20 @@
   left: 5%;
 }
 
+/** PopUp Endereço da telaPrincipal **/
 .popUpServicos {
   position: absolute;
-  width: 70%;
+  width: 80%;
   height: 40%;
-  top: 30%;
-  left: 15%;
+  top: 45%;
+  left: 10%;
   border-radius: 12px;
-  background-color: #FFF;
+  background-color: rgba(242, 242, 242, 1);
   z-index: 5;
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
 }
 #enderecoTexto {
   position: absolute;
@@ -277,6 +282,10 @@
   border-radius: 12px;
 }
 #enderecoButton {
+  position: absolute;
+  height: 10%;
+  width: 10%;
+  left: 90%;
   color: #FFF;
   border-radius: 100%;
   border: 0px;
@@ -284,6 +293,7 @@
   background-color: rgb(224, 139, 0);
 }
 
+/** Comentários da telaPrincipal **/
 .comentariosContent {
   position: absolute;
   width: 100%;
@@ -327,7 +337,6 @@
   top: 16%;
   font-size: 15px;
   font-weight: bold;
-  border: solid 3px #000;
 }
 #estrelas {
   position:  absolute;
@@ -345,7 +354,6 @@
   left: 0.5%;
   font-size: 12px;
   text-align: justify;
-  border: solid 3px #000;
 }
 
 /** =============================TELAPRINCIPAL=END========================== **/
@@ -474,6 +482,30 @@
   to {
     -webkit-transform: none;
     transform: none;
+  }
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
   }
 }
 /** ==========================ANIMATIONS=END================================ **/

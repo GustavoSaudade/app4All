@@ -19,9 +19,9 @@ app.controller('telaInicialController', ['$scope', '$http', '$state', function($
   };
 
   $scope.buttonsHome2Action = function() {
-    alert("buttonsHome2Action");
+    $state.go('telaPrincipal', {urlId: b});
   };
   $scope.buttonsHome3Action = function() {
-    alert("buttonsHome3Action");
+    $state.go('telaPrincipal', {urlId: c33});
   };
 }]);
