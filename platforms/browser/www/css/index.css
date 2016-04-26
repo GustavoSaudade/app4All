@@ -84,7 +84,7 @@
   background-color: rgba(242, 242, 242, 1);
 }
 
-/** Cabeçalho da telaPrincipal **/
+/** -------------Cabeçalho da telaPrincipal------------------- **/
 .cabecalho {
   position: absolute;
   width: 100%;
@@ -122,17 +122,82 @@
   height: 45%;
   width: 8%;
   top: 45%;
-  left: 8%;
+  left: 12%;
 }
 .localizacaoTexto {
   position: absolute;
   height: 90%;
   width: 80%;
-  left: 20%;
+  left: 25%;
   top: 0%;
   display: flex;
   align-items: flex-end;
   font-size: 18px;
+}
+/* IPHONE 5, 4, Nokia Lumia 520 */
+@media screen and (width: 320px) {
+  .localizacaoTexto {
+    left: 21% !important;
+    top: -5%;
+    font-size: 14px !important;
+  }
+  #pinoDoMapa {
+    left: 8%;
+  }
+}
+/* Galaxy S5, noteS3, Note II, SIII, Nexus 5, Nokia N9 */
+@media screen and (width: 360px) {
+  .localizacaoTexto {
+    left: 20% !important;
+    top: -5%;
+    font-size: 16px !important;
+  }
+  #pinoDoMapa {
+    left: 8%;
+  }
+}
+/* Iphone 6 */
+@media screen and (width: 375px) {
+  .localizacaoTexto {
+    top: -8%;
+    left: 23% !important;
+    font-size: 16px !important;
+  }
+}
+/* LG Optimus L70, Nexus 4*/
+@media screen and (width: 384px) {
+  .localizacaoTexto {
+    font-size: 16px !important;
+    top: -5% !important;
+  }
+}
+/* Nexus 6 */
+@media screen and (width: 412px) {
+  .localizacaoTexto {
+    font-size: 17px !important;
+    top: -8% !important;
+  }
+}
+/* Iphone 6 plus */
+@media screen and (width: 414px) {
+  .localizacaoTexto {
+    font-size: 16px !important;
+    top: -8% !important;
+  }
+}
+/* Nexus 6P */
+@media screen and (width: 435px) {
+  .localizacaoTexto {
+    top: -8% !important;
+  }
+}
+/* Nexus 10 */
+@media screen and (min-width: 768px) {
+  .localizacaoTexto {
+    font-size: 33px !important;
+    top: -5% !important;
+    left: 22% !important;
+  }
 }
 .botaoSearchContent {
   position: absolute;
@@ -154,8 +219,10 @@
   width: 100%;
   top: 40%;
 }
+/** ------------ Cabeçalho da telaPrincipal-FIM--------------- **/
 
-/** Imagem Principal da telaPrincipal **/
+
+/** ------------ Imagem Principal da telaPrincipal------------ **/
 .imagemDaPaginaContent {
   position: absolute;
   width: 100%;
@@ -166,17 +233,64 @@
   width: 100%;
   height: 100%;
 }
+/** ------------ Imagem Principal da telaPrincipal-FIM-------- **/
 
-/** Título da telaPrincipal **/
+
+/** ------------ Título da telaPrincipal---------------------- **/
 .tituloContent {
   position: absolute;
   width: 100%;
   height: 10%;
   top: 40%;
+  left: 2%;
   color: rgb(224, 139, 0);
 }
+/* Galaxy S5, noteS3, Note II, SIII, Nexus 5, Nokia N9 */
+@media screen and (width: 360px) {
+  .tituloContent {
+    font-size: 20px;
+  }
+}
+/* Iphone 6 */
+@media screen and (width: 375px) {
+  .tituloContent {
+    font-size: 20px;
+  }
+}
+/* LG Optimus L70, Nexus 4*/
+@media screen and (width: 384px) {
+  .tituloContent {
+    font-size: 20px;
+  }
+}
+/* Nexus 6 */
+@media screen and (width: 412px) {
+  .tituloContent {
+    font-size: 22px;
+  }
+}
+/* Iphone 6 plus */
+@media screen and (width: 414px) {
+  .tituloContent {
+    font-size: 22px;
+  }
+}
+/* Nexus 6P */
+@media screen and (width: 435px) {
+  .tituloContent {
+    font-size: 22px;
+  }
+}
+/* Nexus 10 */
+@media screen and (min-width: 768px) {
+  .tituloContent {
+    font-size: 35px;
+  }
+}
+/** ------------ Título da telaPrincipal-FIM------------------ **/
 
-/** Logotipo da telaPrincipal **/
+
+/** ------------ Logotipo da telaPrincipal-------------------- **/
 .logoContent {
   position: absolute;
   width: 20%;
@@ -191,8 +305,10 @@
   height: 100%;
   border-radius: 100%;
 }
+/** ------------ Logotipo da telaPrincipal-FIM---------------- **/
 
-/** Seção descrição e botões da telaPrincipal **/
+
+/** ------------ Seção descrição e botões da telaPrincipal---- **/
 .secao {
   position: absolute;
   width: 100%;
@@ -251,9 +367,45 @@
   width: 100%;
   height: 70%;
   top: 30%;
-  font-size: 11px;
+  font-size: 13px;
   color: rgb(224, 139, 0);
   text-align: justify;
+}
+/* IPHONE 5, 4, Nokia Lumia 520 */
+@media screen and (width: 320px) {
+  .textoSecaoContent {
+    font-size: 11px;
+  }
+}
+/* Galaxy S5, note3, Note II, SIII, Nexus 5, Nokia N9 */
+@media screen and (width: 360px) {
+  .textoSecaoContent {
+    font-size: 13px;
+  }
+}
+/* Nexus 6 */
+@media screen and (width: 412px) {
+  .textoSecaoContent {
+    font-size: 15px;
+  }
+}
+/* Iphone 6 plus */
+@media screen and (width: 414px) {
+  .textoSecaoContent {
+    font-size: 15px;
+  }
+}
+/* Nexus 6P */
+@media screen and (width: 435px) {
+  .textoSecaoContent {
+    font-size: 15px;
+  }
+}
+/* Nexus 10 */
+@media screen and (min-width: 768px) {
+  .textoSecaoContent {
+    font-size: 25px;
+  }
 }
 #textoDaSecao {
   position: absolute;
@@ -262,8 +414,10 @@
   top: 5%;
   left: 5%;
 }
+/** ------------ Seção descrição e botões da telaPrincipal-FIM **/
 
-/** PopUp Endereço da telaPrincipal **/
+
+/** ------------ PopUp Endereço da telaPrincipal-------------- **/
 .popUpServicos {
   position: absolute;
   width: 80%;
@@ -300,8 +454,10 @@
   font-weight: bold;
   background-color: rgb(224, 139, 0);
 }
+/** ------------ PopUp Endereço da telaPrincipal-FIM---------- **/
 
-/** Comentários da telaPrincipal **/
+
+/** ------------ Comentários da telaPrincipal----------------- **/
 .comentariosContent {
   position: absolute;
   width: 100%;
@@ -364,6 +520,7 @@
   font-size: 12px;
   text-align: justify;
 }
+/** ------------ Comentários da telaPrincipal-FIM------------- **/
 
 /** =============================TELAPRINCIPAL=END========================== **/
 
