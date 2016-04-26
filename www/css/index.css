@@ -474,6 +474,22 @@
   border: solid 1px grey;
   border-radius: 12px;
 }
+/* Nexus 10 */
+@media screen and (min-width: 768px) {
+  .comentario {
+    height: 200px;
+  }
+  #nomeUsuario {
+    font-size: 25px !important;
+  }
+  #fotoUsuario {
+    height: 55% !important;
+    max-height: 55% !important;
+  }
+  #tituloComentario {
+    font-size: 25px !important;
+  }
+}
 #fotoUsuario {
   position: absolute;
   width: 18%;
