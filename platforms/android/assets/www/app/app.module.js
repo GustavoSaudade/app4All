@@ -18,5 +18,9 @@ app.config(function($stateProvider, $urlRouterProvider){
       url: "/telaPrincipal/:urlId",
       templateUrl: "app/sections/telaPrincipal/telaPrincipal.html",
       controller: 'telaPrincipalController'
+    })
+    .state('telaDeServicos', {
+      url: "/telaDeServicos",
+      templateUrl: "app/sections/telaDeServicos/telaDeServicos.html"
     });
 });

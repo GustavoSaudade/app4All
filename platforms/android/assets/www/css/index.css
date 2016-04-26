@@ -28,13 +28,13 @@
 .buttonsHome {
   position: absolute;
   width: 100%;
-  height: 45%;
-  top: 50%;
+  height: 50%;
+  top: 42%;
   color: #000;
 }
 .buttonsHome button {
   width: 100%;
-  height: 20%;
+  height: 17%;
   margin-top: 5%;
   -webkit-animation-name: bounceInRight;
  animation-name: bounceInRight;
@@ -48,12 +48,17 @@
 #buttonHome2 {
   animation-duration: 1.5s;
   -webkit-animation-duration: 1.5s;
-  background-color: rgb(44, 44, 44);
+  background-color: rgb(103, 147, 16);
 }
 #buttonHome3 {
   animation-duration: 2s;
   -webkit-animation-duration: 2s;
   background-color: rgb(81, 81, 81);
+}
+#buttonHome4 {
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+  background-color: rgb(44, 44, 44);
 }
 .linksNavigation {
   position: absolute;
@@ -253,13 +258,17 @@
 /** PopUp Endereço da telaPrincipal **/
 .popUpServicos {
   position: absolute;
-  width: 70%;
+  width: 80%;
   height: 40%;
-  top: 30%;
-  left: 15%;
+  top: 45%;
+  left: 10%;
   border-radius: 12px;
-  background-color: #FFF;
+  background-color: rgba(242, 242, 242, 1);
   z-index: 5;
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
 }
 #enderecoTexto {
   position: absolute;
@@ -273,6 +282,10 @@
   border-radius: 12px;
 }
 #enderecoButton {
+  position: absolute;
+  height: 10%;
+  width: 10%;
+  left: 90%;
   color: #FFF;
   border-radius: 100%;
   border: 0px;
@@ -324,7 +337,6 @@
   top: 16%;
   font-size: 15px;
   font-weight: bold;
-  border: solid 3px #000;
 }
 #estrelas {
   position:  absolute;
@@ -342,7 +354,6 @@
   left: 0.5%;
   font-size: 12px;
   text-align: justify;
-  border: solid 3px #000;
 }
 
 /** =============================TELAPRINCIPAL=END========================== **/
@@ -471,6 +482,30 @@
   to {
     -webkit-transform: none;
     transform: none;
+  }
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
   }
 }
 /** ==========================ANIMATIONS=END================================ **/
