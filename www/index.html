@@ -1,3 +1,5 @@
+<!-- page Index do App. Serve para realizar os imports de dependências
+e iniciar o módulo angular -->
 <html>
     <head>
         <!-- Meta Tags e imports default do Cordova -->
@@ -14,15 +16,13 @@
         <script type="text/javascript" src="app/app.module.js"></script>
         <script type="text/javascript" src="app/sections/telaInicial/telaInicialController.js"></script>
         <script type="text/javascript" src="app/sections/telaPrincipal/telaPrincipalController.js"></script>
-
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
-
 
         <title>App 4All</title>
     </head>
 
     <body ng-app="app4AllModule">
+      <!--div onde as rotas acontecem -->
       <div ui-view></div>
     </body>
 </html>

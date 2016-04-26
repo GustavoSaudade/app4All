@@ -1,4 +1,7 @@
+<!-- ========================== HTML da telaPrincipal ====================== -->
 <div id="superContentTelaPrincipal" class="superContentTelaPrincipal">
+
+  <!-- ========================== Cabeçalho ================================ -->
   <div class="cabecalho">
     <div class="botaoVoltarContent">
       <a id="linkVoltar" ui-sref="telaInicial"><img id="botaoVoltar" src="img/botaovoltar.png" alt="" /></a>
@@ -14,19 +17,31 @@
       <img id="lupa" src="img/lupa.png" alt="" />
     </div>
   </div>
+  <!-- ========================== Cabeçalho =FIM============================ -->
 
+
+  <!-- ========================== Imagem Principal ========================= -->
   <div class="imagemDaPaginaContent">
     <img id="imagemDaPagina" src={{imagemDaPaginaUrl}} alt="" />
   </div>
+  <!-- ========================== Imagem Principal =FIM===================== -->
 
+
+  <!-- ========================== Título =================================== -->
   <div class="tituloContent">
     <h3>{{titulo}}</h3>
   </div>
+  <!-- ========================== Título =FIM=============================== -->
 
+
+  <!-- ========================== Logotipo ================================= -->
   <div class="logoContent">
     <img id="logo" src="{{logoUrl}}" alt="" />
   </div>
+  <!-- ========================== Logotipo =FIM============================= -->
 
+
+  <!-- ========================== Seção e Botões =========================== -->
   <div class="secao">
     <div class="botoesSecaoContent">
       <div id="botaoLigar">
@@ -66,9 +81,10 @@
       <p id="conteudoComentario">{{comentario.comentario}}</p>
     </div>
   </div>
-
+  <!-- ========================== Seção e Botões =FIM======================= -->
 </div>
 
+<!-- ============================ PopUp Endereço =========================== -->
 <div class="popUpServicos" ng-show="showPopUp">
   <button id="enderecoButton" type="button" name="button" ng-click="clickClosePopUp()">X</button>
   <div id="enderecoTexto">
@@ -76,3 +92,6 @@
     {{endereco}}
   </div>
 </div>
+<!-- ============================ PopUp Endereço =FIM======================= -->
+
+<!-- ========================== HTML da telaPrincipal =FIM================== -->
