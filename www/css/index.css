@@ -172,10 +172,10 @@
   }
 }
 /* Nexus 6 */
-@media screen and (width: 412px) {
+@media screen and (min-width: 400px) {
   .localizacaoTexto {
-    font-size: 17px !important;
-    top: -8% !important;
+    font-size: 17px;
+    top: -8%;
   }
 }
 /* Iphone 6 plus */
@@ -189,6 +189,13 @@
 @media screen and (width: 435px) {
   .localizacaoTexto {
     top: -8% !important;
+  }
+}
+/* Nexus 7 */
+@media screen and (min-width: 600px) {
+  .localizacaoTexto {
+    top: -8% !important;
+    font-size: 25px !important;
   }
 }
 /* Nexus 10 */
@@ -279,6 +286,12 @@
 @media screen and (width: 435px) {
   .tituloContent {
     font-size: 22px;
+  }
+}
+/* Nexus 7 */
+@media screen and (min-width: 600px) {
+  .tituloContent {
+    font-size: 25px !important;
   }
 }
 /* Nexus 10 */
@@ -401,6 +414,12 @@
     font-size: 15px;
   }
 }
+/* Nexus 7 */
+@media screen and (min-width: 600px) {
+  .textoSecaoContent {
+    font-size: 19px !important;
+  }
+}
 /* Nexus 10 */
 @media screen and (min-width: 768px) {
   .textoSecaoContent {
@@ -474,6 +493,16 @@
   border: solid 1px grey;
   border-radius: 12px;
 }
+/* Nexus 7 */
+@media screen and (min-width: 600px) {
+  #conteudoComentario {
+    font-size: 17px !important;
+  }
+  #fotoUsuario {
+    height: 55% !important;
+    max-height: 55% !important;
+  }
+}
 /* Nexus 10 */
 @media screen and (min-width: 768px) {
   .comentario {
@@ -489,6 +518,12 @@
   #tituloComentario {
     font-size: 25px !important;
   }
+  #conteudoComentario {
+    top: 45% !important;
+    left: 0.5% !important;
+    font-size: 23px !important;
+  }
+
 }
 #fotoUsuario {
   position: absolute;
