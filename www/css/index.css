@@ -31,7 +31,30 @@
   left: 12%;
   font-size: 15px;
 }
-
+/* Nexus 10 */
+@media screen and (min-width: 768px) {
+  #TextoInicial {
+    font-size: 30px;
+  }
+  .buttonsHome button {
+    font-size: 30px !important;
+  }
+}
+/* Nexus 7 */
+@media screen and (min-width: 600px) {
+  #TextoInicial {
+    font-size: 30px !important;
+  }
+  .buttonsHome button {
+    font-size: 30px !important;
+  }
+}
+/* Nexus 5x */
+@media screen and (min-width: 411px) {
+  #TextoInicial {
+    font-size: 20px;
+  }
+}
 .buttonsHome {
   position: absolute;
   width: 100%;
