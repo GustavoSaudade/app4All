@@ -6,6 +6,12 @@ Contato: gustavosaudade@hotmail.com<br>
 
 Aplicativo desenvolvido com o frameWork Apache Cordova
 
+<h3>Para instalar em um celular ou Tablet Android:</h3>
+
+1 - Com o browser do Android, acessar o link: <a href="https://tsfr.io/f6caer">https://tsfr.io/f6caer</a><br>
+2 - Clicar em "Download App"<br>
+3 - Quando o download concluir, clicar no arquivo baixado e "instalar".  
+
 <h3>Para rodar localmente siga os seguintes passos:</h3>
 
 1 - Instalar o <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">JDK</a><br>
